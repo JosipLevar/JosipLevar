@@ -62,10 +62,6 @@ aside ul li {
     padding-bottom:20px;
     text-align:left;
    }
-aside ul li a:link, ul li a:visited{
-    text-decoration:none;
-    color:darkgray;
-}
 
 #horizontal ul, li, li li {
     margin: 0px;
