@@ -1,9 +1,9 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
-  <title>Konačni automati</title>
-    <link href="cssfile.css" type="text/css" rel="stylesheet"/>
+    <meta charset="utf-8">
+    <title>Konačni automati</title>
+    <link href="cssfile.css" type="text/css" rel="stylesheet" />
 </head>
 <body>
     <div id="omotac">
@@ -28,35 +28,37 @@
                             <a href="Pac_man.html">Pac-Man</a>
                         </ul>
                     </li>
-                    <li><a href="Zakljucak.html">Zaključak</a>
-                    <ul>
-                        <a href="Sazetak.html">Sažetak</a>
-                        <a href="Misljenje.html">Mišljenje</a>
-                    </ul>
+                    <li>
+                        <a href="Zakljucak.html">Zaključak</a>
+                        <ul>
+                            <a href="Sazetak.html">Sažetak</a>
+                            <a href="Misljenje.html">Mišljenje</a>
+                        </ul>
                     </li>
                     <li><a href="Literatura.html">Literatura</a></li>
                 </ul>
             </nav>
         </header>
 
+
         <section>
             <h1>Upotreba konačnih automata u igricama</h1>
-         <h2>Općeniti primjer</h2>
+            <h2>Općeniti primjer</h2>
             <p>
                 Upotreba automata u igricama koristi se kada postavimo da računalo igra protiv nas. Jedan od primjera bi bio u nekakvoj ratnoj igrici. Automat bi u tom slučaju imao stanja npr. traži, hodaj, stani, pucaj, ugrožen, bježi. Počeo bi iz stanja traži unutar čega bi tražio naš lik. Dokle god nas ne bi vidio na ulaz od hodaj stizala bi 0 što bi označavalo da nastavi hodati. Dok je na ulazu od hodaj 0 na ulazu od stani, pucaj, ugrožen i bježi će također biti 0 što će označavati da računalni lik ne puca, nije ugrožen te ne mora bježati. Nakon što nas računalo uoči na ulaz od hodaj dolazi 1. Tada na ulaz od stani i pucaj dolaze 1 što označava da računalni lik stane i počne pucati. Na ulaze od ugrožen i bježi u tom trenutku pristizat će 0. U tom stanju ostat će dok život računalnog lika ne pređe granicu od 20% statusa života nakon čega će na ulaz od stani i pucaj dati 0 što označava da prestane pucati i stajati, a na stanje ugrožen bježi šalje ulaze 1 što označava da je računalni lik ugrožen i mora početi bježati.
             </p>
-	 <h2>Pac-Man</h2>
+            <h2>Pac-Man</h2>
             <p>
-               Pravi primjer korištenja automata u igricama vidljiv je u igrici Pac-Man . Igrica kreće u stanju gdje duhovi lutaju po labirintu. U slučaju da uoče Pac-Man-a automat odnosno duhovi prelaze u stanje uhvati Pac-Man-a. U tom istom stanju ako Pac-Man pojede lopticu za snagu duhovi prelaze u stanje bježi.U prvom slučaju da su uočili Pac-Man i prešli u stanje hvataj Pac-Man-a mogu ili ići u staro stanje lutaj po labirintu što će se dogoditi u slučaju da izgube Pac-Man-a ili prijeći u novo stanje bježi što će se dogoditi u slučaju da Pac-Man pojede lopticu za snagu. U stanju bježi moguća su također dva nova stanja,a to su vraćanje u bazu ili lutaj po labirintu. U stanje vraćaj se u bazu prijeći će ako ih Pac-Man pojede dok je veći od njih. U stanje lutaj po labirintu vratit će se u slučaju da Pac-Man-u istekne snaga od loptice te se smanji. Kada bi ih Pac-Man pojeo i prešli u stanje vrati se u bazu tada mogu prijeći u samo jedno stanje, a to je ponovno na početak lutaj po labirintu. Taj prijelaz dogodit će se kada se duhovi počnu vračati u centralnu bazu.
-            <img src="Pac-man.png" alt="Slika iz igrice Pac-man" style="height:auto;">
-</p>
+                Pravi primjer korištenja automata u igricama vidljiv je u igrici Pac-Man . Igrica kreće u stanju gdje duhovi lutaju po labirintu. U slučaju da uoče Pac-Man-a automat odnosno duhovi prelaze u stanje uhvati Pac-Man-a. U tom istom stanju ako Pac-Man pojede lopticu za snagu duhovi prelaze u stanje bježi.U prvom slučaju da su uočili Pac-Man i prešli u stanje hvataj Pac-Man-a mogu ili ići u staro stanje lutaj po labirintu što će se dogoditi u slučaju da izgube Pac-Man-a ili prijeći u novo stanje bježi što će se dogoditi u slučaju da Pac-Man pojede lopticu za snagu. U stanju bježi moguća su također dva nova stanja,a to su vraćanje u bazu ili lutaj po labirintu. U stanje vraćaj se u bazu prijeći će ako ih Pac-Man pojede dok je veći od njih. U stanje lutaj po labirintu vratit će se u slučaju da Pac-Man-u istekne snaga od loptice te se smanji. Kada bi ih Pac-Man pojeo i prešli u stanje vrati se u bazu tada mogu prijeći u samo jedno stanje, a to je ponovno na početak lutaj po labirintu. Taj prijelaz dogodit će se kada se duhovi počnu vračati u centralnu bazu.
+                <img src="Pac-man.png" alt="Slika iz igrice Pac-man" style="height:auto;">
+            </p>
         </section>
         <aside>
             <ul>
                 <li>Stranicu napravio:Josip Levar</li>
                 <li>Smjer:Jednopredmetni studij iz Informatike</li>
-                   <li>Sveučilište:<a href="http://www.inf.uniri.hr">Odjel za informatiku</a></li>
-                <li>Kontakt:<a href="josip.klevar@gmail.com">josip.klevar@gmail.com</a></li>
+                <li>Sveučilište:<a href="http://www.inf.uniri.hr">Odjel za informatiku</a></li>
+                <li>Kontakt:<a style="color:darkgray" href="mailto:josip.klevar@gmail.com">josip.klevar@gmail.com</a></li>
             </ul>
         </aside>
         <footer>
