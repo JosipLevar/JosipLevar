@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+
+<head>
+    <title>Konaèni automati</title>
+    <link href="cssfile.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+    <div id="omotac">
+        <header>
+            <p><a href="default.html">Upotreba konaènih automata</a></p>
+            <nav id="horizontal">
+                <ul>
+                    <li><a href="Uvod.html">Uvod</a></li>
+                    <li>
+                        <a href="Upotreba_konacnih_automata.html">Upotreba u svakodnevici</a>
+                        <ul>
+                            <a href="Pokretanje_obrtnih_vrata.html">Obrtna vrata</a>
+                            <a href="Automatska_vrata_rampa.html">Automatska vrata</a>
+                            <a href="Sef.html">Sef</a>
+                            <a href="Semafor.html">Semafor</a>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="Upotreba_konacnih_automata_u_igricama.html">Upotreba u igricama</a>
+                        <ul>
+                            <a href="Opceniti_primjer.html">Opæeniti primjer</a>
+                            <a href="Pac_man.html">Pac-Man</a>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="Zakljucak.html">Zakljuèak</a>
+                        <ul>
+                            <a href="Sazetak.html">Sažetak</a>
+                            <a href="Misljenje.html">Mišljenje</a>
+                        </ul>
+                    </li>
+                    <li><a href="Literatura.html">Literatura</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+
+        <section>
+            <h1>Upotreba konaènih automata u igricama</h1>
+            <h2>Opæeniti primjer</h2>
+            <p>
+                Upotreba automata u igricama koristi se kada postavimo da raèunalo igra protiv nas. Jedan od primjera bi bio u nekakvoj ratnoj igrici. Automat bi u tom sluèaju imao stanja npr. traži, hodaj, stani, pucaj, ugrožen, bježi. Poèeo bi iz stanja traži unutar èega bi tražio naš lik. Dokle god nas ne bi vidio na ulaz od hodaj stizala bi 0 što bi oznaèavalo da nastavi hodati. Dok je na ulazu od hodaj 0 na ulazu od stani, pucaj, ugrožen i bježi æe takoðer biti 0 što æe oznaèavati da raèunalni lik ne puca, nije ugrožen te ne mora bježati. Nakon što nas raèunalo uoèi na ulaz od hodaj dolazi 1. Tada na ulaz od stani i pucaj dolaze 1 što oznaèava da raèunalni lik stane i poène pucati. Na ulaze od ugrožen i bježi u tom trenutku pristizat æe 0. U tom stanju ostat æe dok život raèunalnog lika ne preðe granicu od 20% statusa života nakon èega æe na ulaz od stani i pucaj dati 0 što oznaèava da prestane pucati i stajati, a na stanje ugrožen bježi šalje ulaze 1 što oznaèava da je raèunalni lik ugrožen i mora poèeti bježati.
+            </p>
+            <h2>Pac-Man</h2>
+            <p>
+                Pravi primjer korištenja automata u igricama vidljiv je u igrici Pac-Man . Igrica kreæe u stanju gdje duhovi lutaju po labirintu. U sluèaju da uoèe Pac-Man-a automat odnosno duhovi prelaze u stanje uhvati Pac-Man-a. U tom istom stanju ako Pac-Man pojede lopticu za snagu duhovi prelaze u stanje bježi.U prvom sluèaju da su uoèili Pac-Man i prešli u stanje hvataj Pac-Man-a mogu ili iæi u staro stanje lutaj po labirintu što æe se dogoditi u sluèaju da izgube Pac-Man-a ili prijeæi u novo stanje bježi što æe se dogoditi u sluèaju da Pac-Man pojede lopticu za snagu. U stanju bježi moguæa su takoðer dva nova stanja,a to su vraæanje u bazu ili lutaj po labirintu. U stanje vraæaj se u bazu prijeæi æe ako ih Pac-Man pojede dok je veæi od njih. U stanje lutaj po labirintu vratit æe se u sluèaju da Pac-Man-u istekne snaga od loptice te se smanji. Kada bi ih Pac-Man pojeo i prešli u stanje vrati se u bazu tada mogu prijeæi u samo jedno stanje, a to je ponovno na poèetak lutaj po labirintu. Taj prijelaz dogodit æe se kada se duhovi poènu vraèati u centralnu bazu.
+                <img src="Pac-man.png" alt="Slika iz igrice Pac-man" style="height:auto;">
+            </p>
+        </section>
+        <aside>
+            <ul>
+                <li>Stranicu napravio:Josip Levar</li>
+                <li>Smjer:Jednopredmetni studij iz Informatike</li>
+                <li>Sveuèilište:<a href="http://www.inf.uniri.hr">Odjel za informatiku</a></li>
+                <li>Kontakt:<a style="color:darkgray" href="mailto:josip.klevar@gmail.com">josip.klevar@gmail.com</a></li>
+            </ul>
+        </aside>
+        <footer>
+            <p>Hvala na posjeti stranice</p>
+        </footer>
+    </div>
+</body>
+</html>

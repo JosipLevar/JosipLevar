@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+
+<head>
+    <title>Konaèni automati</title>
+    <link href="cssfile.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+    <div id="omotac">
+        <header>
+            <p><a href="default.html">Upotreba konaènih automata</a></p>
+            <nav id="horizontal">
+                <ul>
+                    <li><a href="Uvod.html">Uvod</a></li>
+                    <li>
+                        <a href="Upotreba_konacnih_automata.html">Upotreba u svakodnevici</a>
+                        <ul>
+                            <a href="Pokretanje_obrtnih_vrata.html">Obrtna vrata</a>
+                            <a href="Automatska_vrata_rampa.html">Automatska vrata</a>
+                            <a href="Sef.html">Sef</a>
+                            <a href="Semafor.html">Semafor</a>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="Upotreba_konacnih_automata_u_igricama.html">Upotreba u igricama</a>
+                        <ul>
+                            <a href="Opceniti_primjer.html">Opæeniti primjer</a>
+                            <a href="Pac_man.html">Pac-Man</a>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="Zakljucak.html">Zakljuèak</a>
+                        <ul>
+                            <a href="Sazetak.html">Sažetak</a>
+                            <a href="Misljenje.html">Mišljenje</a>
+                        </ul>
+                    </li>
+                    <li><a href="Literatura.html">Literatura</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+
+        <section>
+            <h2>Semafor</h2>
+            <p>
+                Upotreba automata u semaforu radi u skladu s brojaèem. Automat se može nalaziti u tri razlièita stanja crveno, žuto te zeleno. Brojaè automatu daje ulaze 0 ili 1, 0 kada je odbrojavanje u tijeku, a 1 kada je odbrojavanje završilo. Tako kada je automat u stanju crveno i brojaè nije odbrojao odreðeno vrijeme automat æe ostati u stanju crveno. Nakon što brojaè odbroji odreðeno vrijeme te pošalje automatu ulaz 1 automat æe prijeæi u stanje žuto. U stanju žuto brojaè se vraæa na 0 te ponovno odbrojava odreðeno vrijeme postavljeno za stanje žuto. Nakon što odbroji postavljeno vrijeme šalje na ulaz automatu stanje 1 prilikom èega automat iz stanja žuto može prijeæi samo u stanje zeleno. Nakon što preðe u stanje zeleno brojaè se ponovno vraæa na 0 te po istom principu nakon što odbroji vrijeme automatu šalje ulaz 1 te automat prelazi iz stanja zeleno u crveno.
+                <table>
+                    <tr>
+                        <th></th>
+                        <th>Crveno</th>
+                        <th>Žuto</th>
+                        <th>Zeleno</th>
+                    </tr>
+                    <tr>
+                        <td>Brojaè na 0</td>
+                        <td>Crveno</td>
+                        <td>Žuto</td>
+                        <td>Zeleno</td>
+                    </tr>
+                    <tr>
+                        <td>Brojaè na 1</td>
+                        <td>Žuto</td>
+                        <td>Zeleno</td>
+                        <td>Crveno</td>
+                    </tr>
+            </p>
+            </table>
+        </section>
+        <aside>
+            <ul>
+                <li>Stranicu napravio:Josip Levar</li>
+                <li>Smjer:Jednopredmetni studij iz Informatike</li>
+                <li>Sveuèilište:<a href="http://www.inf.uniri.hr">Odjel za informatiku</a></li>
+                <li>Kontakt:<a style="color:darkgray" href="mailto:josip.klevar@gmail.com">josip.klevar@gmail.com</a></li>
+            </ul>
+        </aside>
+        <footer>
+            <p>Hvala na posjeti stranice</p>
+        </footer>
+    </div>
+</body>
+</html>
